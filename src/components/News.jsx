@@ -4,7 +4,9 @@ const News = () => {
   return (
     <div className="news-wrapper">
       <div className="section-center">
-        <h3>Join our newsletter and get 20% off</h3>
+        <h3>
+          Join our Newsletter and Get <span> 20% off</span>
+        </h3>
         <div className="content">
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque

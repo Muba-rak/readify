@@ -161,6 +161,9 @@
   max-width: 45em;
   color: var(--clr-grey-5);
 }
+.news-wrapper span {
+  color: var(--clr-primary-5);
+}
 .contact-form {
   width: 85vw;
   max-width: 500px;
