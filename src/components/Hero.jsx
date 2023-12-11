@@ -6,7 +6,9 @@ const Hero = () => {
   return (
     <div className="section-center hero-wrapper">
       <article className="content">
-        <h1>Read a book today</h1>
+        <h1 className="animate__animated animate__heartBeat">
+          Read a book today
+        </h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil facere
           earum recusandae modi numquam dignissimos vitae explicabo! At, minima
