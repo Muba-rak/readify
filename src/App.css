@@ -28,6 +28,9 @@
   font-size: 1rem;
 }
 @media (min-width: 992px) {
+  .links a:hover {
+    font-size: 1.1rem;
+  }
   .links {
     display: flex;
     justify-content: space-between;
@@ -212,5 +215,37 @@
   }
   p {
     margin-bottom: 0;
+  }
+}
+
+/* about css */
+.about-wrapper {
+  display: grid;
+  gap: 4rem;
+}
+.about-wrapper img {
+  width: 100%;
+  display: block;
+  border-radius: var(--radius);
+  height: 500px;
+  object-fit: cover;
+}
+.about-wrapper p {
+  line-height: 2;
+  max-width: 45em;
+  margin: 0 auto;
+  margin-top: 2rem;
+  color: var(--clr-grey-5);
+  text-align: left;
+}
+.title {
+  text-align: left;
+}
+.underline {
+  margin-left: 0;
+}
+@media (min-width: 992px) {
+  .about-wrapper {
+    grid-template-columns: 1fr 1fr;
   }
 }

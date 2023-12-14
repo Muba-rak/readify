@@ -1,18 +1,21 @@
 import "./App.css";
-import FeaturedBooks from "./components/FeaturedBooks";
-import Footer from "./components/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import News from "./components/News";
+import Footer from "./components/Footer";
+import AboutPage from "./pages/AboutPage";
 
 function App() {
   return (
     <>
-      <Header />
-      <Hero />
-      <FeaturedBooks />
-      <News />
-      <Footer />
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutPage />} />
+        </Routes>
+        <Footer />
+      </Router>
     </>
   );
 }
