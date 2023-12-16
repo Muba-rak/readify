@@ -11,6 +11,7 @@
 /* .links {
   display: none;
 } */
+
 .links {
   display: flex;
   flex-direction: column;
@@ -28,6 +29,7 @@
   border: none;
   height: 30px;
   font-size: 18px;
+  color: var(--clr-primary-5);
 }
 .hero-wrapper {
   min-height: 60vh;
