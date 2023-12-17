@@ -4,7 +4,7 @@ const ContactPage = () => {
   return (
     <div className="contact-wrapper page">
       <div className="contact-wrapper-form">
-        <div>
+        <div className="inner-div">
           <div className="title" style={{ margin: "auto" }}>
             <h2>Contact Us</h2>
             <div className="underline"></div>
