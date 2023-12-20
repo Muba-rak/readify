@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import ErrorPage from "./pages/ErrorPage";
+import SingleBookPage from "./pages/SingleBookPage";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/book/:bookId" element={<SingleBookPage />} />
+
           <Route path="*" element={<ErrorPage />} />
         </Routes>
         <Footer />

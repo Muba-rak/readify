@@ -143,7 +143,7 @@
   border-radius: 5px;
 }
 .maincard h4 {
-  color: var(--clr-gray-1);
+  color: var(--clr-grey-1);
   font-size: 1rem;
   /* height: 35px; */
   margin-top: 3px;
@@ -355,5 +355,75 @@
   }
   .contact-wrapper-form div {
     width: 60%;
+  }
+}
+
+/* SINGLE BOOK PAGE */
+
+.link-btn {
+  width: fit-content;
+}
+.product-center {
+  display: grid;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+.price {
+  color: var(--clr-primary-5);
+}
+.desc {
+  line-height: 2;
+  max-width: 45em;
+}
+.info {
+  text-transform: capitalize;
+  width: 300px;
+  display: grid;
+  grid-template-columns: 125px 1fr;
+}
+.genre {
+  width: fit-content;
+}
+.info span {
+  font-weight: 700;
+  color: var(--clr-primary-5);
+}
+.red {
+  color: var(--clr-red-dark);
+}
+.green {
+  color: var(--clr-green-dark);
+}
+
+@media (min-width: 992px) {
+  .product-center {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .price {
+    font-size: 1.25rem;
+  }
+}
+
+.image-wrapper {
+  height: 620px;
+}
+
+.image-wrapper img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  border-radius: var(--radius);
+  object-fit: cover;
+}
+
+@media (max-width: 500px) {
+  .image-wrapper {
+    height: 400px;
+  }
+
+  .image-wrapper img {
+    height: 100%;
+    width: 100%;
   }
 }
