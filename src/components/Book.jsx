@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Book = ({ id, title, authors, image_url, rating }) => {
   return (
-    <Link to={`/book/${id}`} className="text-decoration-none">
+    <Link to={`/book/${id}`} className="text-decoration-none onhover">
       <div className="maincard">
         <img
           className="photo animate__animated animate__flipInX"

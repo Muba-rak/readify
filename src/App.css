@@ -132,6 +132,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.onhover:hover {
+  width: 284px;
+  cursor: pointer;
+  box-shadow: 19px 33px 34px 26px rgba(0, 0, 0, 0.1);
+}
 .maincard {
   margin: auto;
   margin-top: 10px;
