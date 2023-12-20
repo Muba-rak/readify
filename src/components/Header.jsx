@@ -20,7 +20,6 @@ const Header = () => {
         </div>
         <div className="links gap-5 fs-6 d-none d-lg-flex">
           <Link to="/about">About</Link>
-          <Link to="/">Services</Link>
           <Link to="/contact">Contact</Link>
           <button className="btnn">Lend one</button>
         </div>
@@ -28,7 +27,6 @@ const Header = () => {
       {show && (
         <div className="links gap-5 fs-6">
           <Link to="/about">About</Link>
-          <Link to="/">Services</Link>
           <Link to="/contact">Contact</Link>
           <button className="btnn">Lend one</button>
         </div>
