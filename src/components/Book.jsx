@@ -5,10 +5,9 @@ const Book = ({ id, title, authors, image_url, rating }) => {
   return (
     <Link
       to={`/book/${id}`}
-      className="text-decoration-none onhover maincard"
-      // style={{ border: "1px solid red", margin: "auto" }}
+      className="text-decoration-none onhover maincard onhover"
     >
-      <div className="maincardd">
+      <div>
         <img
           className="photo animate__animated animate__flipInX"
           src={image_url}
