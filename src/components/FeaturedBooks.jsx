@@ -19,7 +19,7 @@ const FeaturedBooks = () => {
         <h2>Featured Books</h2>
         <div className="underline"></div>
       </div>
-      <div className="section-center adventure-card mt-4">
+      <div className="section-center adventure-card m-auto mt-4">
         {books.map((book) => {
           return <Book key={books.id} {...book} />;
         })}
