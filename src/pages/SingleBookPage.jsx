@@ -6,7 +6,7 @@ import { useFetch } from "../hooks/useFetch";
 const SingleBookPage = () => {
   const { bookId } = useParams();
   const url = `https://example-data.draftbit.com/books/${bookId}`;
-  const { isLoading, data: book } = useFetch(url);
+  const { isLoading, data: book, isError } = useFetch(url);
   const checkRating = (rate) => {
     if (rate > 4) {
       return "green";
@@ -16,6 +16,13 @@ const SingleBookPage = () => {
   };
   if (isLoading) {
     return <Loading />;
+  }
+  if (isError) {
+    return (
+      <h2 className="text-center text-capitalize">
+        Error occured while fetching Books.. Try again
+      </h2>
+    );
   }
 
   return (
