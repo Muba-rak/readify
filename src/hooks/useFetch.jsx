@@ -8,8 +8,6 @@ export const useFetch = (url) => {
 
   const getData = async () => {
     try {
-      // const res = await fetch(url);
-      // const item = await res.json();
       const { data: item } = await axios(url);
       setData(item);
       setIsLoading(false);

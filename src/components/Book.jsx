@@ -2,6 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Book = ({ id, title, authors, image_url, rating }) => {
+  const checkRating = (rate) => {
+    if (rate > 4) {
+      return "green";
+    } else {
+      return "red";
+    }
+  };
   return (
     <Link
       to={`/book/${id}`}
@@ -16,7 +23,10 @@ const Book = ({ id, title, authors, image_url, rating }) => {
         <h4>{title} </h4>
         <div className="d-flex justify-content-between align-items-center">
           <p className="author">{authors} </p>
-          <p className="ratings">Ratings :{rating} </p>
+          <p className="ratings">
+            Ratings :{" "}
+            <span className={`  ${checkRating(rating)}`}> {rating} </span>{" "}
+          </p>
         </div>
       </div>
     </Link>
