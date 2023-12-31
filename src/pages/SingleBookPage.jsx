@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
-
 import Loading from "../components/Loading";
 import { useFetch } from "../hooks/useFetch";
 const SingleBookPage = () => {
@@ -45,6 +44,7 @@ const SingleBookPage = () => {
             <h5 className="price">{book.authors}</h5>
             <p className="desc">{book.description}</p>
 
+            <hr />
             <p className="info">
               <span>Pages : </span>
               {book.num_pages}
@@ -57,7 +57,6 @@ const SingleBookPage = () => {
               <span>Genres : </span>
               {book.genres}
             </p>
-            <hr />
           </section>
         </div>
       </div>
