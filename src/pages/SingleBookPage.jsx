@@ -33,7 +33,11 @@ const SingleBookPage = () => {
         </Link>
         <div className="product-center">
           <div className="image-wrapper">
-            <img src={book.image_url} alt="" />
+            <img
+              className="animate__animated animate__fadeInLeft"
+              src={book.image_url}
+              alt=""
+            />
           </div>
           <section className="content">
             <h2>{book.title}</h2>
